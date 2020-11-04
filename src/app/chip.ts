@@ -4,9 +4,6 @@ export interface Chip {
     description: string;
     type: string;
     damage: number;
-    chipCode1: string;
-    chipCode2: string;
-    chipCode3: string;
-    chipCode4: string;
+    chipCode: string [];
     image: string;
 }

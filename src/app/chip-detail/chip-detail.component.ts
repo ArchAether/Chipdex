@@ -14,10 +14,7 @@ export class ChipDetailComponent implements OnInit {
     description: "Cannon attack to 1 enemy",
     type: "Non-Elemental",
     damage: 40,
-    chipCode1: "A",
-    chipCode2: "B",
-    chipCode3: "C",
-    chipCode4: "*",
+    chipCode: ["A", "B", "C", "*"],
     image: "../assets/img/MMBN 6 Cannon.png",
   }
 
