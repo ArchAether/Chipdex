@@ -1,0 +1,11 @@
+<ul class="chips">
+    <li *ngFor = "let chip of chips"
+        [class.selected] = "chip === selectedChip"
+        (click) = "onSelect(chip)">
+        <span class="badge">{{chip.id}}</span>{{chip.name}}
+    </li>
+</ul>
+
+<div>
+    <app-chip-detail [chip] = "selectedChip"></app-chip-detail>
+</div>

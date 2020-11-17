@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Chip } from '../chip';
 
 @Component({
@@ -8,7 +8,7 @@ import { Chip } from '../chip';
 })
 export class ChipDetailComponent implements OnInit {
 
-  chip: Chip = {
+  /*chip: Chip = {
     id: 0,
     name: "Cannon",
     description: "Cannon attack to 1 enemy",
@@ -16,8 +16,10 @@ export class ChipDetailComponent implements OnInit {
     damage: 40,
     chipCode: ["A", "B", "C", "*"],
     image: "../assets/img/MMBN 6 Cannon.png",
-  }
+  }*/
 
+  @Input() chip: Chip;
+  
   constructor() { }
 
   ngOnInit(): void {
