@@ -11,11 +11,20 @@ export class ChipListComponent implements OnInit {
   
   chips = CHIPS;
   selectedChip: Chip;
+  defaultChip: Chip = {
+    id: 0,
+    name: "Select a Chip on the right",
+    description: "\n",
+    type: "???",
+    damage: 0,
+    chipCode: ["?"],
+    image: "../assets/img/MMBN 6 Cannon.png",
+  }
   
   constructor() { }
 
   ngOnInit(): void {
-    
+    this.selectedChip = this.defaultChip;
   }
   onSelect(chip: Chip): void {
     this.selectedChip = chip;
