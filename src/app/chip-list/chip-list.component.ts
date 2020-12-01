@@ -15,10 +15,11 @@ export class ChipListComponent implements OnInit {
     id: 0,
     name: "Select a Chip on the right",
     description: "\n",
-    type: "???",
+    element: "???",
+    class: "???",
     damage: 0,
     chipCode: ["?"],
-    image: "../assets/img/MMBN 6 Cannon.png",
+    image: "../assets/Images/BattleChips/NoData.png",
   }
   
   constructor() { }

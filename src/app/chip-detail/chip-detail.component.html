@@ -10,13 +10,23 @@
     
     <div class="row border-bottom">
         <div class="col-3 border-right">
-            <p>{{chip.type}}</p>
+            Element: 
+            <img *ngIf="chip.element == 'Null'" src = "../assets/Images/ElementIcons/Null.png">
+            <img *ngIf="chip.element == 'Fire'" src = "../assets/Images/ElementIcons/Fire.png">
+            <img *ngIf="chip.element == 'Aqua'" src = "../assets/Images/ElementIcons/Aqua.png">           
+            <img *ngIf="chip.element == 'Elec'" src = "../assets/Images/ElementIcons/Elec.png">                     
+            <img *ngIf="chip.element == 'Wood'" src = "../assets/Images/ElementIcons/Wood.png">       
+            <img *ngIf="chip.element == 'Sword'" src = "../assets/Images/ElementIcons/Sword.png">         
+            <img *ngIf="chip.element == 'Wind'" src = "../assets/Images/ElementIcons/Wind.png">      
+            <img *ngIf="chip.element == 'Cursor'" src = "../assets/Images/ElementIcons/Cursor.png">    
+            <img *ngIf="chip.element == 'Breaking'" src = "../assets/Images/ElementIcons/Breaking.png">            
         </div>
         <div class="col-3 border-right">
-            <p>{{chip.damage}}</p>
+            <p>Damage: {{chip.damage}}</p>
         </div>
         <div class="col-3">
             <p>Codes: {{chip.chipCode}}</p>
+            <p>Class: {{chip.class}}</p>
         </div>
     </div>
     <p>{{chip.description}}</p>

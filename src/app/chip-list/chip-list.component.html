@@ -7,7 +7,8 @@
             <li *ngFor = "let chip of chips"
                 [class.selected] = "chip === selectedChip"
                 (click) = "onSelect(chip)">
-                <span class="badge">{{chip.id}}</span>{{chip.name}} | {{chip.type}} | {{chip.damage}}
+                <span class="badge">{{chip.id}}</span>{{chip.name}} | <img *ngIf = "chip.element == 'Null'" src="../assets/Images/ElementIcons/Null.png"> 
+                | {{chip.damage}}
             </li>
         </ul>
     </div>
