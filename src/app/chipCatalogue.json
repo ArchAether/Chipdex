@@ -1,0 +1,323 @@
+[
+    {   
+        "id": 1,
+        "name": "Cannon",
+        "description": "Cannon attack to 1 enemy\n",
+        "element": "Null",
+        "class": "Standard",
+        "damage": 40,
+        "chipCode": ["A", "B", "C", "*"],
+        "megabytes": 6,
+        "image": "../assets/Images/BattleChips/Cannon.png"},
+
+    {
+        "id": 2,
+        "name": "HiCannon",
+        "description": "Cannon attack to 1 enemy\n",
+        "element" : "Null",
+        "class": "Standard",
+        "damage": 100,
+        "chipCode": ["L", "M", "N", "*"],
+        "megabytes": 24,
+        "image": "../assets/Images/BattleChips/HiCannon.png"
+    },
+
+    {   
+        "id": 3,
+        "name": "M-Cannon",
+        "description":"Cannon attack to 1 enemy",
+        "element" : "Null",
+        "class": "Standard",
+        "damage": 180,
+        "chipCode": ["R", "S", "T", "*"],
+        "megabytes": 38,
+        "image": "../assets/Images/BattleChips/M-Cannon.png"
+    },
+    {   
+        "id": 4,
+        "name": "Airshot",
+        "description":"Knock an enemy back 1 square",
+        "element" : "Wind",
+        "class": "Standard",
+        "damage": 20,
+        "chipCode": ["*"],
+        "megabytes": 4,
+        "image": "../assets/Images/BattleChips/Airshot.png"
+    },
+    {   
+        "id": 5,
+        "name": "Vulcan1",
+        "description":"Fires 3 shots and hits the panel behind",
+        "element" : "Null",
+        "class": "Standard",
+        "damage": 10,
+        "chipCode": ["B", "D", "S", "*"],
+        "megabytes": 5,
+        "image": "../assets/Images/BattleChips/Vulcan1.png"
+    },
+    {   
+        "id": 6,
+        "name": "Vulcan2",
+        "description":"Fires 4 shots and hits the panel behind",
+        "element" : "Null",
+        "class": "Standard",
+        "damage":20 ,
+        "chipCode": ["F", "L"],
+        "megabytes": 18,
+        "image": "../assets/Images/BattleChips/Vulcan2.png"
+    },
+    {   
+        "id": 7,
+        "name": "Vulcan3",
+        "description":"Fires 5 shots and hits the panel behind.",
+        "element" : "Null",
+        "class": "Standard",
+        "damage": 20,
+        "chipCode": ["G"],
+        "megabytes": 30,
+        "image": "../assets/Images/BattleChips/Vulcan3.png"
+    },
+    {   
+        "id": 8,
+        "name": "SuperVulc",
+        "description":"Fires 10-shots and hits the panel behind.",
+        "element" : "Null",
+        "class": "Standard",
+        "damage": 20,
+        "chipCode": ["V"],
+        "megabytes": 0,
+        "image": "../assets/Images/BattleChips/SuperVulcan.png"
+    },
+    {   
+        "id": 9,
+        "name": "Spreadr1",
+        "description":"Spreads damage to adjacent panels.",
+        "element" : "Null",
+        "class": "Standard",
+        "damage": 30,
+        "chipCode": ["L", "M", "N", "*"],
+        "megabytes": 0,
+        "image": "../assets/Images/BattleChips/Spreadr1.png"
+    },
+    {   
+        "id": 10,
+        "name": "Spreadr2",
+        "description":"Spreads damage to adjacent panels.",
+        "element" : "Null",
+        "class": "Standard",
+        "damage": 60,
+        "chipCode": ["A", "B", "C", "*"],
+        "megabytes": 0,
+        "image": "../assets/Images/BattleChips/Spreadr2.png"
+    },
+    {   
+        "id": 11,
+        "name": "Spreadr3",
+        "description":"Spreads damage to adjacent panels.",
+        "element" : "Null",
+        "class": "Standard",
+        "damage": 90,
+        "chipCode": ["A", "B", "C", "*"],
+        "megabytes": 0,
+        "image": "../assets/Images/BattleChips/Spreadr3.png"
+    },
+    {   
+        "id": 12,
+        "name": "TankCan1",
+        "description":"3sqr blast if it hits the end row",
+        "element" : "Null",
+        "class": "Standard",
+        "damage": 120,
+        "chipCode": ["T"],
+        "megabytes": 0,
+        "image": "../assets/Images/BattleChips/TankCan1.png"
+    },
+    {   
+        "id": 13,
+        "name": "TankCan2",
+        "description":"3sqr blast if it hits the end row",
+        "element" : "Null",
+        "class": "Standard",
+        "damage": 160,
+        "chipCode": ["T"],
+        "megabytes": 0,
+        "image": "../assets/Images/BattleChips/TankCan2.png"
+    },
+    {   
+        "id": 14,
+        "name": "TankCan4",
+        "description":"3sqr blast if it hits the end row",
+        "element" : "Null",
+        "class": "Standard",
+        "damage": 200,
+        "chipCode": ["T"],
+        "megabytes": 0,
+        "image": "../assets/Images/BattleChips/TankCan3.png"
+    },
+    {   
+        "id": 15,
+        "name": "GunDelS1",
+        "description":"Hits row 2 panels ahead with sunshine.",
+        "element" : "Null",
+        "class": "Standard",
+        "damage": 0,
+        "chipCode": ["C", "M", "T", "*"],
+        "megabytes": 0,
+        "image": "../assets/Images/BattleChips/GunDelS1.png"
+    },
+    {   
+        "id": 16,
+        "name": "GunDelS2",
+        "description":"Hits row 2 panels ahead with sunshine.",
+        "element" : "Null",
+        "class": "Standard",
+        "damage": 0,
+        "chipCode": ["C", "M", "T", "*"],
+        "megabytes": 0,
+        "image": "../assets/Images/BattleChips/GunDelS2.png"
+    },
+    {   
+        "id": 18,
+        "name": "GunDelS3",
+        "description":"Hits row 2 panels ahead with sunshine.",
+        "element" : "Null",
+        "class": "Standard",
+        "damage": 0,
+        "chipCode": ["C", "M", "T", "*"],
+        "megabytes": 0,
+        "image": "../assets/Images/BattleChips/GunDelS3.png"
+    },
+    {   
+        "id": 19,
+        "name": "YoYo",
+        "description":"Fires a Yoyo 3 squares ahead, dealing damage when it comes back",
+        "element" : "Null",
+        "class": "Standard",
+        "damage": 50,
+        "chipCode": ["A", "B", "C", "*"],
+        "megabytes": 0,
+        "image": "../assets/Images/BattleChips/YoYo.png"
+    },
+    {   
+        "id": 20,
+        "name": "FireBrn1",
+        "description":"Fires a 3 square flame, cracking panels.",
+        "element" : "Fire",
+        "class": "Standard",
+        "damage": 70,
+        "chipCode": ["A", "B", "C", "*"],
+        "megabytes": 0,
+        "image": "../assets/Images/BattleChips/FireBurn1.png"
+    },
+    {   
+        "id": 21,
+        "name": "FireBrn2",
+        "description":"Fires a 3 square flame, cracking panels.",
+        "element" : "Fire",
+        "class": "Standard",
+        "damage": 110,
+        "chipCode": ["A", "B", "C", "*"],
+        "megabytes": 0,
+        "image": "../assets/Images/BattleChips/FireBurn2.png"
+    },
+    {   
+        "id": 22,
+        "name": "FireBrn3",
+        "description":"Fires a 3 square flame, cracking panels.",
+        "element" : "Fire",
+        "class": "Standard",
+        "damage": 150,
+        "chipCode": ["A", "B", "C", "*"],
+        "megabytes": 0,
+        "image": "../assets/Images/BattleChips/FireBurn3.png"
+    },
+    {   
+        "id": 23,
+        "name": "WideSht",
+        "description":"Fires 3 square wide wave",
+        "element" : "Aqua",
+        "class": "Standard",
+        "damage": 100,
+        "chipCode": ["A", "B", "C", "*"],
+        "megabytes": 0,
+        "image": "../assets/Images/BattleChips/WideSht.png"
+    },
+    {   
+        "id": 24,
+        "name": "TrnArrw1",
+        "description":"Hits enemy with a train of arrows. More arrows are fired when you are further away.",
+        "element" : "Aqua",
+        "class": "Standard",
+        "damage": 30,
+        "chipCode": ["A", "B", "C", "*"],
+        "megabytes": 0,
+        "image": "../assets/Images/BattleChips/TrnArrw1.png"
+    },
+    {   
+        "id": 25,
+        "name": "TrnArrw2",
+        "description":"Hits enemy with a train of arrows. More arrows are fired when you are further away.",
+        "element" : "Aqua",
+        "class": "Standard",
+        "damage": 40,
+        "chipCode": ["A", "B", "C", "*"],
+        "megabytes": 0,
+        "image": "../assets/Images/BattleChips/TrnArrw2.png"
+    },
+    {   
+        "id": 26,
+        "name": "TrnArrw3",
+        "description":"Hits enemy with a train of arrows. More arrows are fired when you are further away.",
+        "element" : "Aqua",
+        "class": "Standard",
+        "damage": 50,
+        "chipCode": ["A", "B", "C", "*"],
+        "megabytes": 0,
+        "image": "../assets/Images/BattleChips/TrnArrw3.png"
+    },
+    {   
+        "id": 27,
+        "name": "BblStar1",
+        "description":"Seals an enemy in a bubble",
+        "element" : "Aqua",
+        "class": "Standard",
+        "damage": 60,
+        "chipCode": ["A", "B", "C", "*"],
+        "megabytes": 0,
+        "image": "../assets/Images/BattleChips/BblStar1.png"
+    },
+    {   
+        "id": 28,
+        "name": "BblStar2",
+        "description":"Seals an enemy in a bubble",
+        "element" : "Aqua",
+        "class": "Standard",
+        "damage": 80,
+        "chipCode": ["A", "B", "C", "*"],
+        "megabytes": 0,
+        "image": "../assets/Images/BattleChips/BblStar2.png"
+    },
+    {   
+        "id": 29,
+        "name": "BblStar3",
+        "description":"Seals an enemy in a bubble",
+        "element" : "Aqua",
+        "class": "Standard",
+        "damage": 100,
+        "chipCode": ["A", "B", "C", "*"],
+        "megabytes": 0,
+        "image": "../assets/Images/BattleChips/BblStar3.png"
+    },
+    {   
+        "id": 30,
+        "name": "Thunder",
+        "description":"Fires a paralyzing orb that homes onto the nearest enemy.",
+        "element" : "Elec",
+        "class": "Standard",
+        "damage": 40,
+        "chipCode": ["A", "B", "C", "*"],
+        "megabytes": 0,
+        "image": "../assets/Images/BattleChips/Thunder.png"
+    }
+    
+]

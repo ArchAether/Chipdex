@@ -7,7 +7,18 @@
             <li *ngFor = "let chip of chips"
                 [class.selected] = "chip === selectedChip"
                 (click) = "onSelect(chip)">
-                <span class="badge">{{chip.id}}</span>{{chip.name}} | <img *ngIf = "chip.element == 'Null'" src="../assets/Images/ElementIcons/Null.png"> 
+                <span class="badge">{{chip.id}}</span>{{chip.name}} | 
+                <img *ngIf = "chip.element == 'Fire'" src="../assets/Images/ElementIcons/Fire.png">
+                <img *ngIf = "chip.element == 'Aqua'" src="../assets/Images/ElementIcons/Aqua.png">
+                <img *ngIf = "chip.element == 'Elec'" src="../assets/Images/ElementIcons/Elec.png">
+                <img *ngIf = "chip.element == 'Wood'" src="../assets/Images/ElementIcons/Wood.png">
+                <img *ngIf = "chip.element == 'Sword'" src="../assets/Images/ElementIcons/Sword.png">
+                <img *ngIf = "chip.element == 'Wind'" src="../assets/Images/ElementIcons/Wind.png">
+                <img *ngIf = "chip.element == 'Cursor'" src="../assets/Images/ElementIcons/Cursor.png">
+                <img *ngIf = "chip.element == 'Obstacle'" src="../assets/Images/ElementIcons/Obstacle.png">
+                <img *ngIf = "chip.element == 'Plus'" src="../assets/Images/ElementIcons/Plus.png">
+                <img *ngIf = "chip.element == 'Breaking'" src="../assets/Images/ElementIcons/Breaking.png">
+                <img *ngIf = "chip.element == 'Null'" src="../assets/Images/ElementIcons/Null.png"> 
                 | {{chip.damage}}
             </li>
         </ul>

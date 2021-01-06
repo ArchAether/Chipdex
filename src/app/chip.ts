@@ -6,5 +6,6 @@ export interface Chip {
     class:string;
     damage: number;
     chipCode: string [];
+    megabytes: number;
     image: string;
 }

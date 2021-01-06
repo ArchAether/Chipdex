@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Chip } from '../chip';
 import { CHIPS } from '../mock-chip-list';
+import chipCatalogue from '../chipCatalogue.json';
 
 @Component({
   selector: 'app-chip-list',
@@ -9,7 +10,8 @@ import { CHIPS } from '../mock-chip-list';
 })
 export class ChipListComponent implements OnInit {
   
-  chips = CHIPS;
+  chips = chipCatalogue; //Json file
+  //chips = CHIPS;
   selectedChip: Chip;
   defaultChip: Chip = {
     id: 0,
@@ -19,6 +21,7 @@ export class ChipListComponent implements OnInit {
     class: "???",
     damage: 0,
     chipCode: ["?"],
+    megabytes: 0,
     image: "../assets/Images/BattleChips/NoData.png",
   }
   
