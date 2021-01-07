@@ -4,7 +4,7 @@
     padding: 0;
     width: 20em;
   }
-  .chips li {
+  .chips li{
     cursor: pointer;
     position: relative;
     left: 0;
@@ -41,3 +41,13 @@
     margin-right: .8em;
     border-radius: 4px 0 0 4px;
   }
+
+.viewport {
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+}
+
+.example-item {
+    height: 100px;
+}
