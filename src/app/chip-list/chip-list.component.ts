@@ -11,6 +11,7 @@ import chipCatalogue from '../chipCatalogue.json';
 })
 export class ChipListComponent implements OnInit {
   
+  searchText;
   chips = chipCatalogue; //Json file
   //chips = CHIPS;
   selectedChip: Chip;
