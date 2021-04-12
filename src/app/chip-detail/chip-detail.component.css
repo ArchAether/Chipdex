@@ -1,0 +1,31 @@
+.container {
+    font-family: Lucida Console;
+}
+#cardTitle {
+    background-color: rgb(177, 209, 146);
+}
+#chipImg {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+#name {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    vertical-align: middle;
+}
+#elementTitle {
+    margin-top: 1em;
+    margin-left: 1em;
+}
+#elementIcon {
+    margin-top: 1em;
+}
+#damage {
+    margin-top: 1em;
+}
+#codes {
+    margin-top: 1em;
+}
+#description {
+    margin-top: 1em;
+}

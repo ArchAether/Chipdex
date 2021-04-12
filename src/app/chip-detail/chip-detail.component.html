@@ -1,35 +1,39 @@
-<div class="container border" style="width: 35rem;" *ngIf="chip">
-    <div class="row border-bottom">
+<div class="container border rounded" style="width: 30rem;" *ngIf="chip">
+    <div id = "cardTitle" class="row border-bottom">
         <div class="col-2">
-            <img class="border border-dark" src={{chip.image}}>
+            <img class="border border-dark" id = "chipImg" src={{chip.image}}>
         </div>    
         <div class="col">
-            <h3>{{chip.name}}</h3>
+            <h5 id="name">{{chip.name}}</h5>
         </div>
     </div>
     
-    <div class="row border-bottom">
+    <div id="chipInfo" class="row border-bottom">
         <div class="col-3 border-right">
-            Element: 
-            <img *ngIf="chip.element == 'Null'" src = "../assets/Images/ElementIcons/Null.png">
-            <img *ngIf="chip.element == 'Fire'" src = "../assets/Images/ElementIcons/Fire.png">
-            <img *ngIf="chip.element == 'Aqua'" src = "../assets/Images/ElementIcons/Aqua.png">           
-            <img *ngIf="chip.element == 'Elec'" src = "../assets/Images/ElementIcons/Elec.png">                     
-            <img *ngIf="chip.element == 'Wood'" src = "../assets/Images/ElementIcons/Wood.png">       
-            <img *ngIf="chip.element == 'Sword'" src = "../assets/Images/ElementIcons/Sword.png">         
-            <img *ngIf="chip.element == 'Wind'" src = "../assets/Images/ElementIcons/Wind.png">      
-            <img *ngIf="chip.element == 'Cursor'" src = "../assets/Images/ElementIcons/Cursor.png">    
-            <img *ngIf="chip.element == 'Breaking'" src = "../assets/Images/ElementIcons/Breaking.png">            
+            <div class="row">
+                <p id="elementTitle">Element:</p>
+                <div id="elementIcon">
+                    <img *ngIf="chip.element == 'Null'" src = "../assets/Images/ElementIcons/Null.png">
+                    <img *ngIf="chip.element == 'Fire'" src = "../assets/Images/ElementIcons/Fire.png">
+                    <img *ngIf="chip.element == 'Aqua'" src = "../assets/Images/ElementIcons/Aqua.png">           
+                    <img *ngIf="chip.element == 'Elec'" src = "../assets/Images/ElementIcons/Elec.png">                     
+                    <img *ngIf="chip.element == 'Wood'" src = "../assets/Images/ElementIcons/Wood.png">       
+                    <img *ngIf="chip.element == 'Sword'" src = "../assets/Images/ElementIcons/Sword.png">         
+                    <img *ngIf="chip.element == 'Wind'" src = "../assets/Images/ElementIcons/Wind.png">      
+                    <img *ngIf="chip.element == 'Cursor'" src = "../assets/Images/ElementIcons/Cursor.png">    
+                    <img *ngIf="chip.element == 'Breaking'" src = "../assets/Images/ElementIcons/Breaking.png">   
+                </div>      
+            </div>    
         </div>
         <div class="col-3 border-right">
-            <p>Damage: {{chip.damage}}</p>
+            <p id="damage">Damage:{{chip.damage}}</p>
         </div>
         <div class="col-3">
-            <p>Codes: {{chip.chipCode}}</p>
-            <p>Class: {{chip.class}}</p>
+            <p id="codes">Codes:{{chip.chipCode}}</p>
+            <p>Class:{{chip.class}}</p>
         </div>
     </div>
-    <p>{{chip.description}}</p>
+    <p id="description">{{chip.description}}</p>
 </div>
 
 

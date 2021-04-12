@@ -18,11 +18,11 @@ export class ChipListComponent implements OnInit {
   defaultChip: Chip = {
     id: 0,
     name: "Select a Chip on the right",
-    description: "\n",
-    element: "???",
-    class: "???",
+    description: "No chip selected",
+    element: "",
+    class: "",
     damage: 0,
-    chipCode: ["?"],
+    chipCode: [""],
     megabytes: 0,
     image: "../assets/Images/BattleChips/NoData.png",
   }
