@@ -1,7 +1,6 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { Chip } from '../chip';
-import { CHIPS } from '../mock-chip-list';
-import chipCatalogue from '../chipCatalogue.json';
+import { ChipService } from '../chip.service';
 
 @Component({
   selector: 'app-chip-list',
@@ -12,8 +11,8 @@ import chipCatalogue from '../chipCatalogue.json';
 export class ChipListComponent implements OnInit {
   
   searchText;
-  chips = chipCatalogue; //Json file
-  //chips = CHIPS;
+  chips: Chip[] = [];
+
   selectedChip: Chip;
   defaultChip: Chip = {
     id: 0,
@@ -28,13 +27,20 @@ export class ChipListComponent implements OnInit {
   }
   items = Array.from({length: 100000}).map((_, i) => `Item #${i}`);
   
-  constructor() { }
+  constructor(private chipService: ChipService) { }
 
   ngOnInit(): void {
     this.selectedChip = this.defaultChip;
+    this.getChips();
+
   }
+
   onSelect(chip: Chip): void {
     this.selectedChip = chip;
+  }
+  getChips(): void {
+    this.chipService.getChips()
+      .subscribe(chips => this.chips = chips);
   }
 
 }
