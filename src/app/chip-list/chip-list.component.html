@@ -1,40 +1,39 @@
 <div class="container border rounded">
-<div class="row border-bottom" id="topBar">
-    <div class="col"><h5 id = "title">Chip Info</h5></div>
-    
-    <div class="md-form">
-        <input type="search" id="chipSearch" [(ngModel)] = "searchText"
-            placeholder="Search"/>
-    </div>
-    
-</div>
-<div class="row" style="margin-top: 1em;">
-    <div class="col">
-        <app-chip-detail [chip] = "selectedChip"></app-chip-detail>
-    </div>
+    <div class="row border-bottom" id="topBar">
+        <div class="col">
+            <h5 id="title">Chip Info</h5>
+        </div>
 
-    <div id="chiplist" class="col">
-        <div *ngFor = "let chip of chips | filter: searchText"
-            id="chipSelector"
-            class="container border boarder-dark rounded row"
-            [class.selected] = "chip === selectedChip"
-            (click) = "onSelect(chip)"
-            width = "1px">
-            <img src="{{chip.image}}"><p id="chipName">{{chip.name}}</p>
-            <div id="elementIcon">
-                <img *ngIf = "chip.element == 'Fire'" src="../assets/Images/ElementIcons/Fire.png">
-                <img *ngIf = "chip.element == 'Aqua'" src="../assets/Images/ElementIcons/Aqua.png">
-                <img *ngIf = "chip.element == 'Elec'" src="../assets/Images/ElementIcons/Elec.png">
-                <img *ngIf = "chip.element == 'Wood'" src="../assets/Images/ElementIcons/Wood.png">
-                <img *ngIf = "chip.element == 'Sword'" src="../assets/Images/ElementIcons/Sword.png">
-                <img *ngIf = "chip.element == 'Wind'" src="../assets/Images/ElementIcons/Wind.png">
-                <img *ngIf = "chip.element == 'Cursor'" src="../assets/Images/ElementIcons/Cursor.png">
-                <img *ngIf = "chip.element == 'Obstacle'" src="../assets/Images/ElementIcons/Obstacle.png">
-                <img *ngIf = "chip.element == 'Plus'" src="../assets/Images/ElementIcons/Plus.png">
-                <img *ngIf = "chip.element == 'Breaking'" src="../assets/Images/ElementIcons/Breaking.png">
-                <img *ngIf = "chip.element == 'Null'" src="../assets/Images/ElementIcons/Null.png"> 
+        <div class="md-form">
+            <input type="search" id="chipSearch" [(ngModel)]="searchText" placeholder="Search" />
+        </div>
+
+    </div>
+    <div class="row" style="margin-top: 1em;">
+        <div class="col">
+            <app-chip-detail [chip]="selectedChip"></app-chip-detail>
+        </div>
+        <div id="chiplist" class="col" *ngIf="loadedData">
+            <div *ngFor="let chip of chips | filter: searchText" id="chipSelector"
+                class="container border boarder-dark rounded row" [class.selected]="chip === selectedChip"
+                (click)="onSelect(chip)" width="1px">
+                <img src="{{chip.image}}">
+                <p id="chipName">{{chip.name}}</p>
+                <div id="elementIcon">
+                    <img *ngIf="chip.element == 'Fire'" src="../assets/Images/ElementIcons/Fire.png">
+                    <img *ngIf="chip.element == 'Aqua'" src="../assets/Images/ElementIcons/Aqua.png">
+                    <img *ngIf="chip.element == 'Elec'" src="../assets/Images/ElementIcons/Elec.png">
+                    <img *ngIf="chip.element == 'Wood'" src="../assets/Images/ElementIcons/Wood.png">
+                    <img *ngIf="chip.element == 'Sword'" src="../assets/Images/ElementIcons/Sword.png">
+                    <img *ngIf="chip.element == 'Wind'" src="../assets/Images/ElementIcons/Wind.png">
+                    <img *ngIf="chip.element == 'Cursor'" src="../assets/Images/ElementIcons/Cursor.png">
+                    <img *ngIf="chip.element == 'Obstacle'" src="../assets/Images/ElementIcons/Obstacle.png">
+                    <img *ngIf="chip.element == 'Plus'" src="../assets/Images/ElementIcons/Plus.png">
+                    <img *ngIf="chip.element == 'Breaking'" src="../assets/Images/ElementIcons/Breaking.png">
+                    <img *ngIf="chip.element == 'Null'" src="../assets/Images/ElementIcons/Null.png">
+                </div>
             </div>
         </div>
     </div>
 </div>
-</div>
+<button (click) = "toggleShow()">Show~!</button>

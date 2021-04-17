@@ -1,6 +1,8 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { Chip } from '../chip';
 import { ChipService } from '../chip.service';
+import { Observable } from 'rxjs';
+import { ChangeDetectorRef } from '@angular/core';
 
 @Component({
   selector: 'app-chip-list',
@@ -11,7 +13,8 @@ import { ChipService } from '../chip.service';
 export class ChipListComponent implements OnInit {
   
   searchText;
-  chips: Chip[] = [];
+  chips: Chip[];
+  loadedData = false;
 
   selectedChip: Chip;
   defaultChip: Chip = {
@@ -25,22 +28,26 @@ export class ChipListComponent implements OnInit {
     megabytes: 0,
     image: "../assets/Images/BattleChips/NoData.png",
   }
-  items = Array.from({length: 100000}).map((_, i) => `Item #${i}`);
   
-  constructor(private chipService: ChipService) { }
-
+  constructor(private chipService: ChipService, private chRef: ChangeDetectorRef) { 
+    
+  }
+  
   ngOnInit(): void {
     this.selectedChip = this.defaultChip;
-    this.getChips();
-
+    this.chipService.getChips()
+      .subscribe(chips => this.chips = chips,
+        error => console.log("Failure"),
+        () => {console.log("Completed!"), this.loadedData = true, 
+        this.chRef.detectChanges()});
   }
 
   onSelect(chip: Chip): void {
     this.selectedChip = chip;
   }
-  getChips(): void {
-    this.chipService.getChips()
-      .subscribe(chips => this.chips = chips);
+
+  toggleShow(): void {
+    //this.loadedData = true;
   }
 
 }
