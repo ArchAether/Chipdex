@@ -1,37 +1,16 @@
-## Welcome to GitHub Pages
+# Chipdex
+Chipdex is a front-end application made in Angular that consumes my [Battlechip-server API](https://github.com/ArchAether/Battlechip-Server) to allow users to search for "Battle chips" from Capcom's [Mega Man Battle Network 6](https://en.wikipedia.org/wiki/Mega_Man_Battle_Network_6). All chips and their related information/images is copywrited by Capcom.
 
-You can use the [editor on GitHub](https://github.com/ArchAether/Chipdex/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Components
+### chip-detail
+- The chip-detail component displays information about the selected chip to the user
+- Gets the chip data via the `@Input()` decorator, and must be passed from the HTML code that renders it: 
+- `<app-chip-detail [chip]="selectedChip"></app-chip-detail>`
+### chip-list
+- The chip-list component is a view that allows the user to search for chips using Angular's ngModel module and ngFor module
+- Requires the chip-detail component
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ArchAether/Chipdex/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Services
+### chip.service
+- Chipdex currently uses one service, the chip service, to obtain information about the chips.
+- The chip service makes a HTTP request to the [Battlechip-server API](https://github.com/ArchAether/Battlechip-Server) to get an array of Chips containing data of all available chips
